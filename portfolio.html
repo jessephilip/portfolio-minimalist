@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style media="screen">
+		body {
+			background: black;
+		}
+
+		main {
+			background: black;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			resize: both;
+			overflow: auto;
+		}
+
+		.aButton {
+			padding: 10px;
+			/* border: 1px solid white; */
+			margin: 0 50px;
+		}
+
+		.big {
+			font-size: 50px;
+		}
+
+		.text-white {
+			color: grey;
+		}
+
+		.text-white:hover {
+			color: white;
+			text-decoration: none;
+		}
+
+		/* Pulse Grow */
+
+		@-webkit-keyframes hvr-pulse-grow {
+			to {
+				-webkit-transform: scale(1.1);
+				transform: scale(1.1);
+			}
+		}
+
+		@keyframes hvr-pulse-grow {
+			to {
+				-webkit-transform: scale(1.1);
+				transform: scale(1.1);
+			}
+		}
+
+		.hvr-pulse-grow {
+			display: inline-block;
+			vertical-align: middle;
+			-webkit-transform: perspective(1px) translateZ(0);
+			transform: perspective(1px) translateZ(0);
+			box-shadow: 0 0 1px transparent;
+		}
+
+		.hvr-pulse-grow:hover,
+		.hvr-pulse-grow:focus,
+		.hvr-pulse-grow:active {
+			-webkit-animation-name: hvr-pulse-grow;
+			animation-name: hvr-pulse-grow;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-timing-function: linear;
+			animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+			-webkit-animation-direction: alternate;
+			animation-direction: alternate;
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<main id="main" class="parent">
+		<div>
+			<a class="aButton big text-white hvr-pulse-grow">About Me</a>
+			<a class="aButton big text-white hvr-pulse-grow">Portfolio</a>
+			<a class="aButton big text-white hvr-pulse-grow">Contact Me</a>
+		</div>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+		var height = window.innerHeight;
+		var width = window.innerWidth;
+		var main = document.getElementById("main");
+		main.style.height = height + "px";
+		main.style.width = width + "px";
+
+		var anchors = document.getElementsByTagName("a");
+		for (var i = 0; i < anchors.length; i++) {
+			anchors[i].style.cursor = "pointer";
+		}
+
+		console.log(width, height);
+	</script>
+</body>
+
+</html>
