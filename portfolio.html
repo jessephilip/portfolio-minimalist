@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<title>Portfolio</title>
 	<link href="https://fonts.googleapis.com/css?family=Proza+Libre|Rubik|Taviraj|Trirong" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-
-	<!-- Latest compiled and minified CSS -->
+	<!-- Devicons CSS -->
+	<link type="text/css" rel="stylesheet" href="assets/css/devicons.min.css">
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -46,14 +46,14 @@
 
 		</nav>
 		<article class="container">
-			<video id="video" playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+			<video id="video" playsinline autoplay muted loop>
 				<source src="assets/images/TrialBackground-dark.mp4" type="video/mp4">
 			</video>
 			<article>
 				<div class="title-text">
 					<h1 class="text-center">JESSE MATHERNE</h1>
 					<!-- <h1 class="text-center">MATHERNE</h1> -->
-					<h4 class="text-center">Web Developer</h5>
+					<h4 class="text-center">Web Developer</h4>
 					<div class="socialDiv text-center">
 						<a class="fa fa-linkedin fa-3x text-grey" href="https://www.linkedin.com/in/jesse-matherne-07333255/" target="_blank"></a>
 						<a class="fa fa-github fa-3x text-grey" href="https://github.com/jessephilip" target="_blank"></a>
@@ -76,38 +76,43 @@
 			</article>
 			<article class="techIcons">
 				<div class="hidden">
-					<img id="skillsImage" src="assets/images/computer-repair-wide.jpg" alt="Jesse Matherne building a local home media server">
+					<!-- <img id="skillsImage" src="assets/images/computer-repair-wide.jpg" alt="Jesse Matherne building a local home media server"> -->
 				</div>
 				<h3 class="text-center">SKILLS</h3>
 				<div class="text-center">
-					<i class="devicon devicon-html5-plain-wordmark text-grey"></i>
-					<i class="devicon devicon-javascript-plain text-grey"></i>
-					<i class="devicon devicon-css3-plain-wordmark text-grey"></i>
-					<i class="devicon devicon-jquery-plain-wordmark text-grey"></i>
-					<i class="devicon devicon-heroku-plain-wordmark text-grey"></i>
-					<i class="devicon devicon-github-plain-wordmark text-grey"></i>
+					<i class="devicons devicons-html5 text-grey"></i>
+					<i class="devicons devicons-css3 text-grey"></i>
+					<i class="devicons devicons-javascript text-grey"></i>
+					<i class="devicons devicons-jquery text-grey"></i>
+					<i class="devicons devicons-git text-grey"></i>
+					<i class="devicons devicons-nodejs_small text-grey"></i>
+					<i class="devicons devicons-npm text-grey"></i>
 				</div>
 				<br />
 				<br />
 				<div class="text-center">
-					<i class="devicon devicon-git-plain-wordmark text-grey"></i>
-					<i class="devicon devicon-bootstrap-plain-wordmark text-grey"></i>
-					<i class="devicon devicon-mongodb-plain-wordmark text-grey"></i>
-					<i class="devicon devicon-mysql-plain-wordmark text-grey"></i>
-					<i class="devicon devicon-nodejs-plain text-grey"></i>
-					<i class="devicon devicon-react-plain text-grey"></i>
-				</div>
+					<i class="devicons devicons-bootstrap text-grey"></i>
+					<i class="devicons devicons-materializecss text-grey"></i>
+					<i class="devicons devicons-heroku text-grey"></i>
+					<i class="devicons devicons-github_badge text-grey"></i>
+					<i class="devicons devicons-mongodb text-grey"></i>
+					<i class="devicons devicons-mysql text-grey"></i>
+					<i class="devicons devicons-react text-grey"></i>
 				</div>
 			</article>
 		</article>
 	</Section>
 
 	<section id="portfolioSection" class="hidden">
-		<nav id="aboutMeNav" class="navbar navbar-inverse">
+		<nav id="portfolioNav" class="navbar navbar-inverse">
 			<a class="navbar-brand" href="#">
 				<img class="brand-image img-responsive img-circle" src="assets/images/main-profile-bw.jpg" alt="Jesse Matherne profile picture">
 			</a>
-			<ul class="nav navbar-nav navbar-right">
+			<a class="aboutMe aButton small navbar-text text-grey hvr-pulse-grow">About Me</a>
+			<a class="portfolio aButton small text-grey hvr-pulse-grow">Portfolio</a>
+			<a class="contactMe aButton small text-grey hvr-pulse-grow">Contact Me</a>
+
+			<ul class="nav navbar-nav navbar-left hidden">
 				<li>
 					<a class="aboutMe aButton small navbar-text text-grey hvr-pulse-grow">About Me</a>
 				</li>
@@ -118,13 +123,100 @@
 					<a class="contactMe aButton small text-grey hvr-pulse-grow">Contact Me</a>
 				</li>
 			</ul>
+
 		</nav>
+
+		<section id="portfolioMain" class="container">
+			<div id="portfolioHeading" class="row text-center">
+				<h1>Projects</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-3 portfolioPic" data-color="hangman_edited.jpg" data-bw="hangman_edited_bw.jpg">
+					<h4 class="text-center">Hangman</h4>
+					<img class="img-responsive portfolioPics" src="assets/images/hangman_edited_bw.jpg" alt="hangman website pic">
+					<div class="picControls text-center">
+						<i class="fa fa-expand text-grey"></i>
+						<i class="devicons devicons-heroku text-grey"></i>
+						<i class="devicons devicons-github_badge text-grey"></i>
+					</div>
+				</div>
+
+				<div class="col-md-3 portfolioPic" data-color="fetch_edited.jpg" data-bw="fetch_edited_bw.jpg">
+					<h4 class="text-center">Fetch</h4>
+					<img class="img-responsive portfolioPics" src="assets/images/fetch_edited_bw.jpg" alt="fetch website pic">
+					<div class="picControls text-center">
+						<i class="fa fa-expand text-grey"></i>
+						<i class="devicons devicons-heroku text-grey"></i>
+						<i class="devicons devicons-github_badge text-grey"></i>
+					</div>
+				</div>
+
+				<div class="col-md-3 portfolioPic" data-color="wedding_edited.jpg" data-bw="wedding_edited_bw.jpg">
+					<h4 class="text-center">Wedding</h4>
+					<img class="img-responsive portfolioPics" src="assets/images/wedding_edited_bw.jpg" alt="wedding website pic">
+					<div class="picControls text-center">
+						<i class="fa fa-expand text-grey"></i>
+						<i class="devicons devicons-heroku text-grey"></i>
+						<i class="devicons devicons-github_badge text-grey"></i>
+					</div>
+				</div>
+				<div class="col-md-3 portfolioPic" data-color="mtg_console_edited.jpg" data-bw="mtg_console_edited_bw.jpg">
+					<h4 class="text-center">MTG Console</h4>
+					<img class="img-responsive portfolioPics" src="assets/images/mtg_console_edited_bw.jpg" alt="mtg console website pic">
+					<div class="picControls text-center">
+						<i class="fa fa-expand text-grey"></i>
+						<i class="devicons devicons-heroku text-grey"></i>
+						<i class="devicons devicons-github_badge text-grey"></i>
+					</div>
+				</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 portfolioPic" data-color="giphy_edited.jpg" data-bw="giphy_edited_bw.jpg">
+						<h4 class="text-center">Giphy Giph</h4>
+						<img class="img-responsive portfolioPics" src="assets/images/giphy_edited_bw.jpg" alt="giphy website pic">
+						<div class="picControls text-center">
+							<i class="fa fa-expand text-grey"></i>
+							<i class="devicons devicons-heroku text-grey"></i>
+							<i class="devicons devicons-github_badge text-grey"></i>
+						</div>
+					</div>
+
+					<div class="col-md-3 portfolioPic">
+						<h4 class="text-center">Placeholder</h4>
+						<img class="img-responsive portfolioPics" src="assets/images/hangman_edited_bw.jpg" alt="hangman website pic">
+						<div class="picControls text-center">
+							<i class="fa fa-expand text-grey"></i>
+							<i class="devicons devicons-heroku text-grey"></i>
+							<i class="devicons devicons-github_badge text-grey"></i>
+						</div>
+					</div>
+
+					<div class="col-md-3 portfolioPic">
+						<h4 class="text-center">Placeholder</h4>
+						<img class="img-responsive portfolioPics" src="assets/images/hangman_edited_bw.jpg" alt="script wars website pic">
+						<div class="picControls text-center">
+							<i class="fa fa-expand text-grey"></i>
+							<i class="devicons devicons-heroku text-grey"></i>
+							<i class="devicons devicons-github_badge text-grey"></i>
+						</div>
+					</div>
+					<div class="col-md-3 portfolioPic">
+						<h4 class="text-center">Placeholder</h4>
+						<img class="img-responsive portfolioPics" src="assets/images/hangman_edited_bw.jpg" alt="script wars website pic">
+						<div class="picControls text-center">
+							<i class="fa fa-expand text-grey"></i>
+							<i class="devicons devicons-heroku text-grey"></i>
+							<i class="devicons devicons-github_badge text-grey"></i>
+						</div>
+					</div>
+				</div>
+	</section>
 
 
 	</section>
 
 	<section id="contactSection" class="hidden">
-		<nav id="aboutMeNav" class="navbar navbar-inverse">
+		<nav id="contactNav" class="navbar navbar-inverse">
 			<a class="navbar-brand" href="#">
 				<img class="brand-image img-responsive img-circle" src="assets/images/main-profile-bw.jpg" alt="Jesse Matherne profile picture">
 			</a>
@@ -183,6 +275,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="assets/javascript/projects.js" charset="utf-8"></script>
 	<script src="assets/javascript/code.js" charset="utf-8"></script>
 </body>
 
