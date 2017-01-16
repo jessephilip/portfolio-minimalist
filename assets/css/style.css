@@ -70,8 +70,12 @@ a:visited, a:link, a:active {
     justify-content: center;
 }
 
-.hidden {
-    display=none;
+.show {
+	display: initial;
+}
+
+.hide {
+    display: none;
 }
 
 .aButton {
@@ -85,6 +89,10 @@ a:visited, a:link, a:active {
     position: fixed;
     width: 100%;
     top: 0;
+	z-index: 50;
+}
+
+#aaa {
 	z-index: 100;
 }
 
@@ -439,4 +447,37 @@ a:visited, a:link, a:active {
   	justify-content: center;
   	align-items: center;
 
+}
+
+/* ---------- Modal CSS ---------- */
+
+#modalImg {
+	border: 2px solid black;
+	margin: 0 auto;
+	width: 80%;
+	box-shadow: 7px 7px 5px #888888;
+}
+
+#modalList {
+	width: 95%;
+	margin: 15px auto;
+}
+
+#modalDesc {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#modalGithub {
+	background-color: black;
+	color: white;
+}
+
+#modalHeroku {
+	background-color: #6661a5;
+	color: white;
+}
+
+#modalHeroku i {
+	color: white;
 }
