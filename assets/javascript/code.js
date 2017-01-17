@@ -58,6 +58,8 @@ function loadAboutMe() {
 	contactSection.style.zIndex = 0;
 	aboutMeSection.style.zIndex = 1;
 
+	getDimensions();
+
 }
 
 function loadPortfolio() {
@@ -71,6 +73,8 @@ function loadPortfolio() {
 	portfolioSection.style.zIndex = 1;
 	contactSection.style.zIndex = 0;
 	aboutMeSection.style.zIndex = 0;
+
+	getDimensions();
 }
 
 function loadContact() {
@@ -84,6 +88,8 @@ function loadContact() {
 	portfolioSection.style.zIndex = 0;
 	contactSection.style.zIndex = 1;
 	aboutMeSection.style.zIndex = 0;
+
+	getDimensions();
 }
 
 // this function replaces the black and white profile picture with the full color one

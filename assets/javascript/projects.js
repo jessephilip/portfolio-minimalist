@@ -11,11 +11,11 @@ const portfolio = {
 	"fetch": {
 		"name": "Fetch",
 		"photo": "assets/images/fetch_edited.jpg",
-		"heroku": "",
+		"heroku": "https://agile-mountain-24076.herokuapp.com/",
 		"github": "https://github.com/jessephilip/Pet-Tinder",
 		"tech": ["HTML", "CSS", "Javascript", "jQuery", "MaterializeCSS", "Google Fonts", "Font Awesome", "Alertify.js", "Google Sign-In", "Node.js", "NPM", "MySQL", "RegEx", "Validator"],
 		"npm": ["BCrypt", "Body-Parser", "Express", "MySQL", "Nightmare", "Sequelize", "Chai", "Mocha", "Request"],
-		"description": 'Fetch is a Tinder-style solution to pet adoptions. It was designed to be a frontend website for adoption agencies to host their avaiable pets and aid in the pet adoption process. This was a group project in which I was involved in its concept and implementation. I worked on both the user experience and backend code, having to edit HTML, CSS, and Javascript. I am particularly proud of my code that set up the Google "One Click" Sign-In experience. I consider this produce to be in its Alpha production and have many plans for further improving it in the future.'
+		"description": 'Fetch is a Tinder-style solution to pet adoptions. It was designed to be a frontend website for adoption agencies to host their avaiable pets and aid in the pet adoption process. This was a group project in which I was involved in its concept and implementation. I worked on both the user experience and backend code, having to edit HTML, CSS, and Javascript. I am particularly proud of my code that set up the Google "One Click" Sign-In experience. I consider this product to be in its Alpha production and have many plans for further improving it in the future.'
 	},
 
 	"mtg": {
@@ -31,7 +31,7 @@ const portfolio = {
 	"ranger": {
 		"name": "Ranger",
 		"photo": "assets/images/ranger_edited.jpg",
-		"heroku": "",
+		"heroku": "https://warm-sands-13736.herokuapp.com/",
 		"github": "https://github.com/jessephilip/Hiking-App",
 		"tech": ["HTML", "CSS", "Javascript", "jQuery", "MaterializeCSS", "Google Fonts", "Alertify.js", "Firebase", "Google Places API", "Open Trails API", "Weather Underground API"],
 		"description": 'Ranger is a weather and hiking website designed to assist someone in planning an outdoor adventure. Utilizing HTML5\'s geolocation, Ranger determines where the user is currently located and provides the user with the weather, a weather forecast, and nearby trails and parks. Ranger also sports a small social-networking feature that allows users to update photographs of parks they have visited. Ranger was my first group project with the UT Coding Bootcamp. I was involved in the conception, design, and implementation of the website. I helped the team write up the HTML and CSS, but I mainly worked in the Javascript for this project. I am most proud of my code that used the Open Trails API to populate the Google map with individual map markers. \n When I get the time, I plan to revisit Ranger and detach it from the Open Trails API, so that it becomes a strictly Google Places website.'
