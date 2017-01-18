@@ -207,3 +207,9 @@ $(".portfolioPics").on("click", (e) => {
     $("#modalHeroku").attr("href", portfolio[id].heroku);
 
 });
+
+function sendMessage() {
+	let name = $("#nameInput").val().trim();
+	let email= $("#emailInput").val().trim();
+	let message = $("message").val().trim();
+}
