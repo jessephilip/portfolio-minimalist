@@ -116,11 +116,8 @@ $(".portfolioPic").mouseout(pictureSwitch);
 function pictureSwitch() {
 
     // variable to determine which portfolio div is hovered over
-    let check = $(this).data("color");
-
-    // split check once and join the created array to get the title of the portfolio project
-    let id = check.split("_", 1);
-    id = id.join();
+    let id = $(this).children("img").data("value");
+	console.log(id);
 
     // conditional to change the color of the project title. if red make right and vice versa.
     if ($(this).children("h4").css("color") === "rgb(128, 128, 128)") {
@@ -149,7 +146,6 @@ function pictureSwitch() {
 
 // clickfunction for clicking on a portfolio project picture. loads a sweetalert modal
 $(".portfolioPics").on("click", (e) => {
-    let loc = "assets/images/";
     let target = e.target.alt;
     let id = target.split(" ", 1);
     id = id.join();
