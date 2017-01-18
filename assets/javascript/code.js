@@ -140,10 +140,10 @@ function pictureSwitch() {
     // if img src has "_bw" change the img src to the color image and vice versa
     if (imgTag.attr("src").indexOf("_bw") === -1) {
         imgSrc = $(this).data("bw");
-        imgTag.attr("src", loc + imgSrc);
+        imgTag.attr("src", portfolio[id].photo_small_bw);
     } else {
         imgSrc = $(this).data("color");
-        imgTag.attr("src", loc + imgSrc);
+        imgTag.attr("src", portfolio[id].photo_small);
     }
 }
 
