@@ -26,7 +26,7 @@
 		</div>
 	</main>
 
-	<section id="aboutMeSection" class="">
+	<section id="aboutMeSection">
 		<nav id="aboutMeNav" class="navbar navbar-inverse">
 			<a class="navbar-brand" href="#">
 				<img class="brand-image img-responsive img-circle" src="assets/images/main-profile-bw.jpg" alt="Jesse Matherne profile picture">
@@ -53,7 +53,7 @@
 				<source src="assets/images/trialbackground-dark.mp4" type="video/mp4">
 			</video>
 			<article>
-				<div class="title-text">
+				<div id="title-text">
 					<h1 class="text-center">JESSE MATHERNE</h1>
 					<!-- <h1 class="text-center">MATHERNE</h1> -->
 					<h4 class="text-center">Web Developer</h4>
@@ -63,7 +63,7 @@
 						<a class="fa fa-facebook fa-3x text-grey" href="https://www.facebook.com/jpmatherne" target="_blank"></a>
 					</div>
 				</div>
-				<div class="dialogue-text">
+				<div id="dialogue-text">
 					<h3 class="text-center">Hi! I'M JESSE MATHERNE</h3>
 					<h3 class="text-center">AND I AM A FULL STACK WEB DEVELOPER.</h3>
 					<br />
@@ -76,37 +76,49 @@
 						<br /> I'll throw some flare in here as well, so that anyone visiting here will not only get to meet Me the Developer, but Me the Person as well. Hope to talk to you soon. Have fun!!!
 					</p>
 				</div>
-			</article>
-			<article class="techIcons">
-				<div class="hide">
-					<!-- <img id="skillsImage" src="assets/images/computer-repair-wide.jpg" alt="Jesse Matherne building a local home media server"> -->
+
+				<div id="resumeDiv">
+					<h3 class="text-center">Resum&eacute</h3>
+					<p class="text-center">
+						Please take a look at my resum&eacute if you are the hiring type.
+					</p>
+					<div class="text-center">
+						<a id="resumeLink" class="text-grey" href="https://drive.google.com/file/d/0B5lpNINnrwjkcGUyVWc5WHVSRkE/view?usp=sharing" target="_blank"><i class="hvr-pulse-grow hvr-glow fa fa-file-text-o fa-3x"></i></a>
+					</div>
 				</div>
-				<h3 class="text-center">SKILLS</h3>
-				<div class="text-center">
-					<i class="devicons devicons-html5 text-grey"></i>
-					<i class="devicons devicons-css3 text-grey"></i>
-					<i class="devicons devicons-javascript text-grey"></i>
-					<i class="devicons devicons-jquery text-grey"></i>
-					<i class="devicons devicons-git text-grey"></i>
-					<i class="devicons devicons-nodejs_small text-grey"></i>
-					<i class="devicons devicons-npm text-grey"></i>
-				</div>
-				<br />
-				<br />
-				<div class="text-center">
-					<i class="devicons devicons-bootstrap text-grey"></i>
-					<i class="devicons devicons-materializecss text-grey"></i>
-					<i class="devicons devicons-heroku text-grey"></i>
-					<i class="devicons devicons-github_badge text-grey"></i>
-					<i class="devicons devicons-mongodb text-grey"></i>
-					<i class="devicons devicons-mysql text-grey"></i>
-					<i class="devicons devicons-react text-grey"></i>
-				</div>
+
+				<article id="techArticle" class="techIcons">
+					<div class="hide">
+						<!-- <img id="skillsImage" src="assets/images/computer-repair-wide.jpg" alt="Jesse Matherne building a local home media server"> -->
+					</div>
+					<h3 class="text-center">SKILLS</h3>
+					<div class="text-center">
+						<i class="devicons devicons-html5 text-grey"></i>
+						<i class="devicons devicons-css3 text-grey"></i>
+						<i class="devicons devicons-javascript text-grey"></i>
+						<i class="devicons devicons-jquery text-grey"></i>
+						<i class="devicons devicons-git text-grey"></i>
+						<i class="devicons devicons-nodejs_small text-grey"></i>
+						<i class="devicons devicons-npm text-grey"></i>
+					</div>
+					<br />
+					<br />
+					<div class="text-center">
+						<i class="devicons devicons-bootstrap text-grey"></i>
+						<i class="devicons devicons-materializecss text-grey"></i>
+						<i class="devicons devicons-heroku text-grey"></i>
+						<i class="devicons devicons-github_badge text-grey"></i>
+						<i class="devicons devicons-mongodb text-grey"></i>
+						<i class="devicons devicons-mysql text-grey"></i>
+						<i class="devicons devicons-react text-grey"></i>
+					</div>
+				</article>
 			</article>
 		</article>
 	</Section>
 
-	<section id="portfolioSection" class="hide">
+	<section id="portfolioSection">
+
 		<nav id="portfolioNav" class="navbar navbar-inverse">
 			<a class="navbar-brand" href="#">
 				<img class="brand-image img-responsive img-circle" src="assets/images/main-profile-bw.jpg" alt="Jesse Matherne profile picture">
@@ -134,29 +146,29 @@
 				<h1>Projects</h1>
 			</div>
 			<div class="row">
-				<div class="col-md-4 portfolioPic">
+				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">Hangman</h4>
 					<img class="img-responsive portfolioPics" data-value="hangman" src="assets/images/hangman_edited_bw_small.jpg" alt="hangman website pic">
 				</div>
-				<div class="col-md-4 portfolioPic">
+				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">Fetch</h4>
 					<img class="img-responsive portfolioPics" data-value="fetch" src="assets/images/fetch_edited_bw_small.jpg" alt="fetch website pic">
 				</div>
-				<div class="col-md-4 portfolioPic">
+				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">Wedding</h4>
 					<img class="img-responsive portfolioPics" data-value="wedding" src="assets/images/wedding_edited_bw_small.jpg" alt="wedding website pic">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 portfolioPic">
+				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">MTG Console</h4>
 					<img class="img-responsive portfolioPics" data-value="mtg" src="assets/images/mtg_console_edited_bw_small.jpg" alt="mtg console website pic">
 				</div>
-				<div class="col-md-4 portfolioPic">
+				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">Giphy Giph</h4>
 					<img class="img-responsive portfolioPics" data-value="giphy" src="assets/images/giphy_edited_bw_small.jpg" alt="giphy website pic">
 				</div>
-				<div class="col-md-4 portfolioPic">
+				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">Ranger</h4>
 					<img class="img-responsive portfolioPics" data-value="ranger" src="assets/images/ranger_edited_bw_small.jpg" alt="ranger website pic">
 				</div>
@@ -188,44 +200,25 @@
 			</ul>
 
 		</nav>
-		<h1>Contact Me</h1>
-		<p>
-			Lorem ipsum dolor sit amet, pro et prima nihil adolescens, officiis quaestio liberavisse ad duo. Soluta detraxit eos ne, an novum dignissim similique mea. Dolorem maiestatis at vel, justo deserunt antiopam vim ex, essent aliquid est id. Ex nibh erat disputationi
-			cum. Numquam facilisis iracundia sed ut. An qui justo suscipit volutpat. Per euismod vulputate ex, no congue platonem his. Quo ut tota aeque choro, vis dicit indoctum at, inimicus consequat mel id. Ea consul ornatus eum. Et dolor inciderint vel, an
-			eum latine ocurreret instructior. Justo laudem indoctum ei cum, eam et saperet appellantur, vel in pericula honestatis. Mea ei illud volutpat, te etiam errem aliquid eam, est iuvaret invidunt ei. Id pri vocibus pericula, ad tollit aperiam vim. Admodum
-			consulatu reprehendunt no mea, et vim aliquam voluptatibus, quod ludus populo te nam. Solum salutandi suscipiantur ei per, errem detraxit phaedrum eos ut. Adhuc audire signiferumque ex cum, eu case graeci definiebas his. In cum aperiam perpetua intellegat,
-			eu vix brute volutpat ocurreret. No pri alterum recusabo, te laboramus aliquando sea. Te enim mentitum sit, soleat adipiscing an per, vocibus vulputate signiferumque nam at. Eripuit phaedrum per te. Mei an quando putent, sed iudico consectetuer an.
-			Ut vel error erant laudem. Ipsum repudiandae ut nam, latine tibique denique ut ius. Efficiantur complectitur et est, novum dicunt mel eu, id vim altera inciderint. Te error efficiendi vis. Cu ubique ocurreret nam. Libris omittam patrioque vis ex, usu
-			nulla primis regione id. No tantas appetere accusata vix, his aeterno molestie in, eam ad vocent graecis ancillae. Fastidii indoctum ei vix, est atqui error at. Purto affert et eam. Vim malis erant utroque eu, libris singulis ex eam, eu mei saperet
-			expetenda. Ut usu oblique repudiare. Quo cu audiam impetus. Ex mea nominati invenire. Nominavi cotidieque usu ea, his ex erant partiendo, pri te solum fuisset assentior. Debet intellegat has et, eu enim rationibus sententiae est. Est an prima fuisset,
-			bonorum euripidis temporibus ea quo. Eam ea diam accumsan facilisi, te possim petentium deseruisse sed. Ei nullam quaestio scripserit est, qui ad recteque sapientem, ius probo vocent voluptatum ea. His ut quod agam putant, intellegat posidonium has
-			ei. Vix maluisset scripserit ut. In nam putant mediocrem, an est vidit omnis causae. In eum delectus deserunt interesset, ubique aeterno interpretaris te ius. Quo laoreet scaevola ex. Munere ridens consequuntur ea vel, at his deserunt hendrerit interesset.
-			Ei nec aperiri tamquam forensibus, duo id ubique definitionem, id vis detracto phaedrum maiestatis. Quis tollit cum id. Nec odio lorem euismod ut, pri probatus quaerendum ea. Dolorem senserit reformidans eu mel, munere nostrud nec no. Eos dicam eirmod
-			persecuti ex, putent fabellas delicata ea mel. Ius causae insolens in, ad vel wisi decore utinam. Probo legimus eu pri, ut eos etiam erant veniam. Te delectus pericula argumentum cum, per an alia audiam corpora. Consulatu deseruisse ius ex, eu nam
-			timeam instructior. Persequeris efficiantur vel ne. Fugit eleifend iudicabit ut mei, ancillae platonem ut cum. Ne qui nominavi disputando, labitur volumus ut mei. Vero dicit recteque ius no, assum tempor suscipit ei mel. Mea te admodum voluptua antiopam.
-			Nullam nemore at vis, vis illud fabulas et. Vix cu consulatu eloquentiam, eum duis vivendum recteque cu. Ei vocent fastidii interpretaris sea. Eum an tritani lobortis interesset, lorem iuvaret reprehendunt est ne, paulo doming ad vix. An vix facilis
-			habemus consetetur, eum id tollit patrioque, eu sed aeque epicurei. An error invenire accommodare eam, mnesarchum vituperatoribus an nec. Eos civibus salutandi neglegentur id. Invidunt accusata cu nec, his hinc aeque accumsan ut. Qui augue saepe id,
-			feugiat consequuntur an mei. Pri possit rationibus id, diam wisi voluptatum sed te, ei utinam essent urbanitas vis. Ei quo nibh minim, cum ei odio senserit. At qui quem ocurreret, sea ad sonet bonorum. Ea vix noluisse expetendis moderatius, ne cum
-			laoreet tincidunt, sea soleat delectus ad. Brute legimus nominavi ea vix. His elit erat te, nibh utinam vituperata vix eu. Debet praesent ne mei. An albucius posidonium nec, possit appetere eloquentiam pro cu, wisi iriure duo ne. Ex appetere electram
-			principes ius, eleifend scripserit appellantur usu et. Lorem ipsum dolor sit amet, pro et prima nihil adolescens, officiis quaestio liberavisse ad duo. Soluta detraxit eos ne, an novum dignissim similique mea. Dolorem maiestatis at vel, justo deserunt
-			antiopam vim ex, essent aliquid est id. Ex nibh erat disputationi cum. Numquam facilisis iracundia sed ut. An qui justo suscipit volutpat. Per euismod vulputate ex, no congue platonem his. Quo ut tota aeque choro, vis dicit indoctum at, inimicus consequat
-			mel id. Ea consul ornatus eum. Et dolor inciderint vel, an eum latine ocurreret instructior. Justo laudem indoctum ei cum, eam et saperet appellantur, vel in pericula honestatis. Mea ei illud volutpat, te etiam errem aliquid eam, est iuvaret invidunt
-			ei. Id pri vocibus pericula, ad tollit aperiam vim. Admodum consulatu reprehendunt no mea, et vim aliquam voluptatibus, quod ludus populo te nam. Solum salutandi suscipiantur ei per, errem detraxit phaedrum eos ut. Adhuc audire signiferumque ex cum,
-			eu case graeci definiebas his. In cum aperiam perpetua intellegat, eu vix brute volutpat ocurreret. No pri alterum recusabo, te laboramus aliquando sea. Te enim mentitum sit, soleat adipiscing an per, vocibus vulputate signiferumque nam at. Eripuit
-			phaedrum per te. Mei an quando putent, sed iudico consectetuer an. Ut vel error erant laudem. Ipsum repudiandae ut nam, latine tibique denique ut ius. Efficiantur complectitur et est, novum dicunt mel eu, id vim altera inciderint. Te error efficiendi
-			vis. Cu ubique ocurreret nam. Libris omittam patrioque vis ex, usu nulla primis regione id. No tantas appetere accusata vix, his aeterno molestie in, eam ad vocent graecis ancillae. Fastidii indoctum ei vix, est atqui error at. Purto affert et eam.
-			Vim malis erant utroque eu, libris singulis ex eam, eu mei saperet expetenda. Ut usu oblique repudiare. Quo cu audiam impetus. Ex mea nominati invenire. Nominavi cotidieque usu ea, his ex erant partiendo, pri te solum fuisset assentior. Debet intellegat
-			has et, eu enim rationibus sententiae est. Est an prima fuisset, bonorum euripidis temporibus ea quo. Eam ea diam accumsan facilisi, te possim petentium deseruisse sed. Ei nullam quaestio scripserit est, qui ad recteque sapientem, ius probo vocent
-			voluptatum ea. His ut quod agam putant, intellegat posidonium has ei. Vix maluisset scripserit ut. In nam putant mediocrem, an est vidit omnis causae. In eum delectus deserunt interesset, ubique aeterno interpretaris te ius. Quo laoreet scaevola ex.
-			Munere ridens consequuntur ea vel, at his deserunt hendrerit interesset. Ei nec aperiri tamquam forensibus, duo id ubique definitionem, id vis detracto phaedrum maiestatis. Quis tollit cum id. Nec odio lorem euismod ut, pri probatus quaerendum ea.
-			Dolorem senserit reformidans eu mel, munere nostrud nec no. Eos dicam eirmod persecuti ex, putent fabellas delicata ea mel. Ius causae insolens in, ad vel wisi decore utinam. Probo legimus eu pri, ut eos etiam erant veniam. Te delectus pericula argumentum
-			cum, per an alia audiam corpora. Consulatu deseruisse ius ex, eu nam timeam instructior. Persequeris efficiantur vel ne. Fugit eleifend iudicabit ut mei, ancillae platonem ut cum. Ne qui nominavi disputando, labitur volumus ut mei. Vero dicit recteque
-			ius no, assum tempor suscipit ei mel. Mea te admodum voluptua antiopam. Nullam nemore at vis, vis illud fabulas et. Vix cu consulatu eloquentiam, eum duis vivendum recteque cu. Ei vocent fastidii interpretaris sea. Eum an tritani lobortis interesset,
-			lorem iuvaret reprehendunt est ne, paulo doming ad vix. An vix facilis habemus consetetur, eum id tollit patrioque, eu sed aeque epicurei. An error invenire accommodare eam, mnesarchum vituperatoribus an nec. Eos civibus salutandi neglegentur id. Invidunt
-			accusata cu nec, his hinc aeque accumsan ut. Qui augue saepe id, feugiat consequuntur an mei. Pri possit rationibus id, diam wisi voluptatum sed te, ei utinam essent urbanitas vis. Ei quo nibh minim, cum ei odio senserit. At qui quem ocurreret, sea
-			ad sonet bonorum. Ea vix noluisse expetendis moderatius, ne cum laoreet tincidunt, sea soleat delectus ad. Brute legimus nominavi ea vix. His elit erat te, nibh utinam vituperata vix eu. Debet praesent ne mei. An albucius posidonium nec, possit appetere
-			eloquentiam pro cu, wisi iriure duo ne. Ex appetere electram principes ius, eleifend scripserit appellantur usu et.
 
+		<h1 class="text-center">Contact Me</h1>
+		<div id="inputs">
+			<form action="https://formspree.io/jessephilip@email.com" method="POST">
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon" id="nameInput"><i class="glyphicon glyphicon-user"></i></span>
+				<input type="text" name="name" class="form-control" placeholder="Your Name" aria-describedby="nameInput">
+			</div>
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon" id="emailInput"><i class="glyphicon glyphicon-envelope"></i></span>
+				<input type="email" name="_replyto"class="form-control" placeholder="Your Email" aria-describedby="emailInput">
+			</div>
+			<div class="form-group">
+				<label for="message">Message:</label>
+				<textarea class="form-control" name="message" rows="5" id="message"></textarea>
+			</div>
+			<input type="submit" value="Send" class="btn btn-lg"></input>
+		</form>
+		</div>
 	</section>
 
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle">

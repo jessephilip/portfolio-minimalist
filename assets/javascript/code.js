@@ -1,11 +1,13 @@
+//TODO: check out how the text color is changing. It gets screwy.
+
 function getDimensions() {
     console.log("Width: " + window.innerWidth + ", Height: " + window.innerHeight);
 }
 
-var height = window.innerHeight;
-var width = window.innerWidth;
-var main = document.getElementById("main");
-var video = document.getElementById("video");
+let height = window.innerHeight;
+let width = window.innerWidth;
+let main = document.getElementById("main");
+let video = document.getElementById("video");
 video.style.height = height + "px";
 //main.style.height = height + "px";
 //main.style.width = width + "px";
@@ -47,8 +49,14 @@ $(".brand-image").mouseout(blackAndWhiteify);
 
 // function for the aboutMeButton (About Me Section)
 function loadAboutMe() {
-    var aboutMeSection = document.getElementById("aboutMeSection");
-    var intro = document.getElementById("intro");
+	$('html,body').scrollTop(0);
+	$("html").css("overflow-y", "inherit");
+    let aboutMeSection = document.getElementById("aboutMeSection");
+    let intro = document.getElementById("intro");
+	$("#title-text").css("height", window.innerHeight);
+	$("#dialogue-text").css("margin-top", (window.innerHeight / 4));
+	$("#resumeDiv").css("margin-top", (window.innerHeight / 4));
+	$("#techArticle").css("margin-top", (window.innerHeight / 4));
     intro.className = "fadeOut";
 	portfolioSection.className = "fadeOut";
 	contactSection.className = "fadeOut";
@@ -58,13 +66,14 @@ function loadAboutMe() {
 	contactSection.style.zIndex = 0;
 	aboutMeSection.style.zIndex = 1;
 
-	getDimensions();
-
 }
 
 function loadPortfolio() {
+	$('html,body').scrollTop(0);
+	$("html").css("overflow-y", "hidden");
     var portfolioSection = document.getElementById("portfolioSection");
     var intro = document.getElementById("intro");
+	$("#portfolioSection").css("height", window.innerHeight);
     intro.className = "fadeOut";
 	aboutMeSection.className = "fadeOut";
 	contactSection.className = "fadeOut";
@@ -78,6 +87,8 @@ function loadPortfolio() {
 }
 
 function loadContact() {
+	$('html,body').scrollTop(0);
+	$("html").css("overflow-y", "hidden");
     var contactSection = document.getElementById("contactSection");
     var intro = document.getElementById("intro");
     intro.className = "fadeOut";
