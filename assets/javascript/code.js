@@ -50,7 +50,7 @@ $(".brand-image").mouseout(blackAndWhiteify);
 // function for the aboutMeButton (About Me Section)
 function loadAboutMe() {
 	$('html,body').scrollTop(0);
-	$("html").css("overflow-y", "inherit");
+	$("html").css("overflow-y", "scroll");
     let aboutMeSection = document.getElementById("aboutMeSection");
     let intro = document.getElementById("intro");
 	$("#title-text").css("height", window.innerHeight);
