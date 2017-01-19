@@ -5,15 +5,15 @@
 	<meta charset="utf-8">
 	<title>Portfolio</title>
 	<!-- Google Fonts -->
-	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proza+Libre|Rubik|Taviraj|Trirong">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet">
 	<!-- Font Awesome -->
 	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 	<!-- Devicons CSS -->
-	<link type="text/css" rel="stylesheet" href="assets/css/devicons.min.css">
+	<link type="text/css" rel="stylesheet" href="css/devicons.min.css">
 	<!-- Bootstrap CSS -->
 	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Custom CSS -->
-	<link type="text/css" rel="stylesheet" href="assets/css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -27,30 +27,44 @@
 	</main>
 
 	<section id="aboutMeSection">
-		<nav id="aboutMeNav" class="navbar navbar-inverse">
-			<a class="navbar-brand" href="#">
-				<img class="brand-image img-responsive img-circle" src="assets/images/main-profile-bw.jpg" alt="Jesse Matherne profile picture">
-			</a>
-			<a class="aboutMe aButton small navbar-text text-grey hvr-pulse-grow">About Me</a>
-			<a class="portfolio aButton small text-grey hvr-pulse-grow">Portfolio</a>
-			<a class="contactMe aButton small text-grey hvr-pulse-grow">Contact Me</a>
+		<nav id="aboutMeNav" class="navbar navbar-inverse parent-col">
+			<ul class="nav navbar-nav navbar-left">
+				<li>
+					<a class="aboutMe text-grey hvr-grow">About Me</a>
+				</li>
 
-			<ul class="nav navbar-nav navbar-left hide">
 				<li>
-					<a class="aboutMe aButton small navbar-text text-grey hvr-pulse-grow">About Me</a>
+					<a class="resume text-grey hvr-grow dropdown-toggle" data-toggle="dropdown">Social Links
+					<span class="caret"></span></button></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a class="text-center" href="https://www.linkedin.com/in/jesse-matherne-07333255/" target="_blank">linkedIn</a></li>
+						<li>
+							<a class="text-center" href="https://github.com/jessephilip" target="_blank">gitHub</a></li>
+						<li>
+							<a class="text-center" href="https://www.facebook.com/jpmatherne" target="_blank">faceBook</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a class="navbar-brand" href="https://drive.google.com/file/d/0B5lpNINnrwjkcGUyVWc5WHVSRkE/view?usp=sharing" target="_blank">
+						<img class="brand-image img-responsive img-circle hvr-grow" src="images/main-profile-bw.jpg" alt="Jesse Matherne profile picture">
+					</a>
+				</li>
+
+				<li>
+					<a class="portfolio text-grey hvr-grow">Portfolio</a>
 				</li>
 				<li>
-					<a class="portfolio aButton small text-grey hvr-pulse-grow">Portfolio</a>
-				</li>
-				<li>
-					<a class="contactMe aButton small text-grey hvr-pulse-grow">Contact Me</a>
+					<a class="contactMe text-grey hvr-grow">Contact Me</a>
 				</li>
 			</ul>
 
 		</nav>
+
 		<article class="container">
 			<video id="video" playsinline autoplay muted loop>
-				<source src="assets/images/trialbackground-dark.mp4" type="video/mp4">
+				<source src="images/trialbackground-dark.mp4" type="video/mp4">
 			</video>
 			<article>
 				<div id="title-text">
@@ -89,7 +103,7 @@
 
 				<article id="techArticle" class="techIcons">
 					<div class="hide">
-						<!-- <img id="skillsImage" src="assets/images/computer-repair-wide.jpg" alt="Jesse Matherne building a local home media server"> -->
+						<!-- <img id="skillsImage" src="images/computer-repair-wide.jpg" alt="Jesse Matherne building a local home media server"> -->
 					</div>
 					<h3 class="text-center">SKILLS</h3>
 					<div class="text-center">
@@ -118,24 +132,36 @@
 	</Section>
 
 	<section id="portfolioSection">
-
-		<nav id="portfolioNav" class="navbar navbar-inverse">
-			<a class="navbar-brand" href="#">
-				<img class="brand-image img-responsive img-circle" src="assets/images/main-profile-bw.jpg" alt="Jesse Matherne profile picture">
-			</a>
-			<a class="aboutMe aButton small navbar-text text-grey hvr-pulse-grow">About Me</a>
-			<a class="portfolio aButton small text-grey hvr-pulse-grow">Portfolio</a>
-			<a class="contactMe aButton small text-grey hvr-pulse-grow">Contact Me</a>
-
-			<ul class="nav navbar-nav navbar-left hide">
+		<nav id="portfolioNav" class="navbar navbar-inverse parent-col">
+			<ul class="nav navbar-nav navbar-left">
 				<li>
-					<a class="aboutMe aButton small navbar-text text-grey hvr-pulse-grow">About Me</a>
+					<a class="aboutMe text-grey hvr-grow">About Me</a>
+				</li>
+
+				<li>
+					<a class="resume text-grey hvr-grow dropdown-toggle" data-toggle="dropdown">Social Links
+					<span class="caret"></span></button></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a class="text-center" href="https://www.linkedin.com/in/jesse-matherne-07333255/" target="_blank">linkedIn</a></li>
+						<li>
+							<a class="text-center" href="https://github.com/jessephilip" target="_blank">gitHub</a></li>
+						<li>
+							<a class="text-center" href="https://www.facebook.com/jpmatherne" target="_blank">faceBook</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a class="navbar-brand" href="https://drive.google.com/file/d/0B5lpNINnrwjkcGUyVWc5WHVSRkE/view?usp=sharing" target="_blank">
+						<img class="brand-image img-responsive img-circle hvr-grow" src="images/main-profile-bw.jpg" alt="Jesse Matherne profile picture">
+					</a>
+				</li>
+
+				<li>
+					<a class="portfolio text-grey hvr-grow">Portfolio</a>
 				</li>
 				<li>
-					<a class="portfolio aButton small text-grey hvr-pulse-grow">Portfolio</a>
-				</li>
-				<li>
-					<a class="contactMe aButton small text-grey hvr-pulse-grow">Contact Me</a>
+					<a class="contactMe text-grey hvr-grow">Contact Me</a>
 				</li>
 			</ul>
 
@@ -148,29 +174,29 @@
 			<div class="row">
 				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">Hangman</h4>
-					<img class="img-responsive portfolioPics" data-value="hangman" src="assets/images/hangman_edited_bw_small.jpg" alt="hangman website pic">
+					<img class="img-responsive portfolioPics" data-value="hangman" src="images/hangman_edited_bw_small.jpg" alt="hangman website pic">
 				</div>
 				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">Fetch</h4>
-					<img class="img-responsive portfolioPics" data-value="fetch" src="assets/images/fetch_edited_bw_small.jpg" alt="fetch website pic">
+					<img class="img-responsive portfolioPics" data-value="fetch" src="images/fetch_edited_bw_small.jpg" alt="fetch website pic">
 				</div>
 				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">Wedding</h4>
-					<img class="img-responsive portfolioPics" data-value="wedding" src="assets/images/wedding_edited_bw_small.jpg" alt="wedding website pic">
+					<img class="img-responsive portfolioPics" data-value="wedding" src="images/wedding_edited_bw_small.jpg" alt="wedding website pic">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">MTG Console</h4>
-					<img class="img-responsive portfolioPics" data-value="mtg" src="assets/images/mtg_console_edited_bw_small.jpg" alt="mtg console website pic">
+					<img class="img-responsive portfolioPics" data-value="mtg" src="images/mtg_console_edited_bw_small.jpg" alt="mtg console website pic">
 				</div>
 				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">Giphy Giph</h4>
-					<img class="img-responsive portfolioPics" data-value="giphy" src="assets/images/giphy_edited_bw_small.jpg" alt="giphy website pic">
+					<img class="img-responsive portfolioPics" data-value="giphy" src="images/giphy_edited_bw_small.jpg" alt="giphy website pic">
 				</div>
 				<div class="col-md-4 portfolioPic hvr-grow">
 					<h4 class="text-center text-grey">Ranger</h4>
-					<img class="img-responsive portfolioPics" data-value="ranger" src="assets/images/ranger_edited_bw_small.jpg" alt="ranger website pic">
+					<img class="img-responsive portfolioPics" data-value="ranger" src="images/ranger_edited_bw_small.jpg" alt="ranger website pic">
 				</div>
 			</div>
 		</section>
@@ -179,23 +205,36 @@
 	</section>
 
 	<section id="contactSection" class="hide">
-		<nav id="contactNav" class="navbar navbar-inverse">
-			<a class="navbar-brand" href="#">
-				<img class="brand-image img-responsive img-circle" src="assets/images/main-profile-bw.jpg" alt="Jesse Matherne profile picture">
-			</a>
-			<a class="aboutMe aButton small navbar-text text-grey hvr-pulse-grow">About Me</a>
-			<a class="portfolio aButton small text-grey hvr-pulse-grow">Portfolio</a>
-			<a class="contactMe aButton small text-grey hvr-pulse-grow">Contact Me</a>
+		<nav id="contactNav" class="navbar navbar-inverse parent-col">
+			<ul class="nav navbar-nav navbar-left">
+				<li>
+					<a class="aboutMe text-grey hvr-grow">About Me</a>
+				</li>
 
-			<ul class="nav navbar-nav navbar-left hide">
 				<li>
-					<a class="aboutMe aButton small navbar-text text-grey hvr-pulse-grow">About Me</a>
+					<a class="resume text-grey hvr-grow dropdown-toggle" data-toggle="dropdown">Social Links
+					<span class="caret"></span></button></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a class="text-center" href="https://www.linkedin.com/in/jesse-matherne-07333255/" target="_blank">linkedIn</a></li>
+						<li>
+							<a class="text-center" href="https://github.com/jessephilip" target="_blank">gitHub</a></li>
+						<li>
+							<a class="text-center" href="https://www.facebook.com/jpmatherne" target="_blank">faceBook</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a class="navbar-brand" href="https://drive.google.com/file/d/0B5lpNINnrwjkcGUyVWc5WHVSRkE/view?usp=sharing" target="_blank">
+						<img class="brand-image img-responsive img-circle hvr-grow" src="images/main-profile-bw.jpg" alt="Jesse Matherne profile picture">
+					</a>
+				</li>
+
+				<li>
+					<a class="portfolio text-grey hvr-grow">Portfolio</a>
 				</li>
 				<li>
-					<a class="portfolio aButton small text-grey hvr-pulse-grow">Portfolio</a>
-				</li>
-				<li>
-					<a class="contactMe aButton small text-grey hvr-pulse-grow">Contact Me</a>
+					<a class="contactMe text-grey hvr-grow">Contact Me</a>
 				</li>
 			</ul>
 
@@ -253,9 +292,9 @@
 	<!-- Bootstrap JavaScript -->
 	<script type="text/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- object containing project descriptions -->
-	<script type="text/javascript" charset="utf-8" src="assets/javascript/projects.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascript/projects.js"></script>
 	<!-- custom js -->
-	<script type="text/javascript" charset="utf-8" src="assets/javascript/code.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascript/code.js"></script>
 </body>
 
 </html>

@@ -106,12 +106,12 @@ function loadContact() {
 // this function replaces the black and white profile picture with the full color one
 function colorifyPicture() {
     console.log("colorify");
-    $(".brand-image").attr("src", "assets/images/main-profile.jpg");
+    $(".brand-image").attr("src", "images/main-profile.jpg");
 }
 
 function blackAndWhiteify() {
     console.log("blackandwhiteify");
-    $(".brand-image").attr("src", "assets/images/main-profile-bw.jpg");
+    $(".brand-image").attr("src", "images/main-profile-bw.jpg");
 }
 
 var portfolioArray = document.getElementsByClassName("portfolioPic")
@@ -140,7 +140,7 @@ function pictureSwitch() {
     let imgSrc;
 
     // variable for the preface of the image source tag
-    let loc = "assets/images/";
+    let loc = "images/";
 
     // variable pointing to the img element in the div
     let imgTag = $(this).children("img");
