@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-minimalist",
+  "version": "1.0.0",
+  "description": "Jesse Matherne portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemailer": "^2.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessephilip/portfolio-minimalist.git"
+  },
+  "author": "jessephilip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessephilip/portfolio-minimalist/issues"
+  },
+  "homepage": "https://github.com/jessephilip/portfolio-minimalist#readme"
+}
