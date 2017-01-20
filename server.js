@@ -45,7 +45,7 @@ app.post("/mail", (req, res) => {
 // ---------- END ---------- //
 
 // set up port
-let PORT = 3001 || process.env.PORT;
+var PORT = 3001 || process.env.PORT;
 
 // run server
 app.listen(PORT, () => {
