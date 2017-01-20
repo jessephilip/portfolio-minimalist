@@ -12,6 +12,10 @@
 	<link type="text/css" rel="stylesheet" href="css/devicons.min.css">
 	<!-- Bootstrap CSS -->
 	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Vex CSS -->
+	<link rel="stylesheet" href="css/vex.css" />
+	<!-- Vex CSS Theme -->
+	<link rel="stylesheet" href="css/vex-wireframe.css" />
 	<!-- Custom CSS -->
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 
@@ -82,10 +86,10 @@
 					<h3 class="text-center">AND I AM A FULL STACK WEB DEVELOPER.</h3>
 					<br />
 					<p class="text-center main-text">
-						Welcome to my portfolio. As you look around, you will see what I am passionate about. Coding. I have been coding, off and on for nearly twenty years. Unfortunately, most of that time was off, but recently, I decided to throw my plans to the wind and pursue
+						Welcome to my portfolio. As you look around, you will see what I am passionate about: Coding. I have been coding, off and on for nearly twenty years. Unfortunately, most of that time was off, but recently, I decided to throw my plans to the wind and pursue
 						this lifetime hobby of mine as my profession. I put down the law books, gave up my pursuit of the gavel, and entrenched myself in the ever-evolving life of a developer.
 						<br />
-						<br /> I'm slated to complete UT's Coding Boot Camp in about a month, and I have many different projects currently in the works. You can find most of them on my Github account. Feel free to Fork any of them. That'd be awesome.
+						<br /> I'm slated to complete UT's Coding Boot Camp in about a month, and I have many different projects currently in the works. You can find most of them on my Github account. Feel free to look them over and contact me if you have any comments or questions.
 						<br />
 						<br /> I'll throw some flare in here as well, so that anyone visiting here will not only get to meet Me the Developer, but Me the Person as well. Hope to talk to you soon. Have fun!!!
 					</p>
@@ -102,10 +106,10 @@
 				</div>
 
 				<article id="techArticle" class="techIcons">
-					<div class="hide">
-						<!-- <img id="skillsImage" src="images/computer-repair-wide.jpg" alt="Jesse Matherne building a local home media server"> -->
-					</div>
-					<h3 class="text-center">SKILLS</h3>
+					<h3 id="skillsH3" class="text-center">Skills</h3>
+					<p class="text-center">
+						Below are the technologies that I know. I love learning and mastering my skills, so this list will continue to grow.
+					</p>
 					<div class="text-center">
 						<i class="devicons devicons-html5 text-grey"></i>
 						<i class="devicons devicons-css3 text-grey"></i>
@@ -129,6 +133,9 @@
 				</article>
 			</article>
 		</article>
+		<br / />
+		<br / />
+		<br / />
 	</Section>
 
 	<section id="portfolioSection">
@@ -245,19 +252,19 @@
 			<div id="nameRow" class="row">
 				<div class="col-md-5">
 					<label id="name" for="name">Name:</label>
-					<input type="text" name="name" class="form-control" placeholder="Your Name" aria-describedby="nameInput">
+					<input id="nameInput" type="text" name="name" class="form-control" placeholder="Your Name" aria-describedby="nameInput">
 				</div>
 				<div class="col-md-2">
 				</div>
 				<div class="col-md-5">
 					<label for="email">Email:</label>
-					<input id="email" type="email" name="_replyto" class="form-control" placeholder="Your Email" aria-describedby="emailInput">
+					<input id="emailInput" type="email" name="_replyto" class="form-control" placeholder="Your Email" aria-describedby="emailInput">
 				</div>
 			</div>
 			<div id="textarea" class="row">
 				<div class="form-group">
 					<label for="message">Message:</label>
-					<textarea class="form-control" name="message" rows="5" id="message"></textarea>
+					<textarea class="form-control" name="message" rows="5" id="messageInput"></textarea>
 				</div>
 			</div>
 			<div class="row">
@@ -271,36 +278,42 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h1 class="modal-title text-center" id="modalTitle">New message</h1>
-			</div>
-			<div class="modal-body">
-				<img id="modalImg" class="img-responsive" src="" alt="" />
+					<h1 class="modal-title text-center" id="modalTitle">New message</h1>
+				</div>
+				<div class="modal-body">
+					<img id="modalImg" class="img-responsive" src="" alt="" />
 
-				<ul id="modalList">
+					<ul id="modalList">
 
-				</ul>
-				<p id="modalDesc">
+					</ul>
+					<p id="modalDesc">
 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<a id="modalGithub" type="button" class="btn color-github" href="#" target="_blank">Github <i class="devicons devicons-github_badge"></i></a>
-				<a id="modalHeroku" type="button" class="btn color-heroku" href="#" target="_blank">Heroku <i class="devicons devicons-heroku"></i></a>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<a id="modalGithub" type="button" class="btn color-github" href="#" target="_blank">Github <i class="devicons devicons-github_badge"></i></a>
+					<a id="modalHeroku" type="button" class="btn color-heroku" href="#" target="_blank">Heroku <i class="devicons devicons-heroku"></i></a>
 
+				</div>
 			</div>
 		</div>
-		</div>
-		</div>
+	</div>
 
-		<!-- jQuery -->
-		<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<!-- Bootstrap JavaScript -->
-		<script type="text/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<!-- object containing project descriptions -->
-		<script type="text/javascript" charset="utf-8" src="javascript/projects.js"></script>
-		<!-- custom js -->
-		<script type="text/javascript" charset="utf-8" src="javascript/code.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script type="text/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Vex js -->
+	<script src="javascript/vex.combined.min.js"></script>
+	<!-- Vex setup -->
+	<script>
+		vex.defaultOptions.className = 'vex-theme-wireframe';
+	</script>
+	<!-- object containing project descriptions -->
+	<script type="text/javascript" charset="utf-8" src="javascript/projects.js"></script>
+	<!-- custom js -->
+	<script type="text/javascript" charset="utf-8" src="javascript/code.js"></script>
 </body>
 
 </html>

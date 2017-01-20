@@ -119,11 +119,6 @@ a:visited, a:link, a:active {
     margin: 0 5px;
 }
 
-#skillsImage {
-    width: 100%;
-    margin: 5%;
-}
-
 .big {
     font-size: 50px;
 }
@@ -333,7 +328,7 @@ img.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
 }
 
 #inputs {
-	width: 70%;
+	width: 50%;
 	margin: 0 auto;
 }
 

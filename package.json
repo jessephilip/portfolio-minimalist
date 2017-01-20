@@ -1,11 +1,13 @@
 {
   "name": "portfolio-minimalist",
   "version": "1.0.0",
-  "description": "Jesse Matherne portfolio",
+  "description": "Portfolio for Jesse Matherne",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.16.0",
     "express": "^4.14.0",
-    "nodemailer": "^2.7.0"
+    "nodemailer": "^2.7.0",
+    "nodemailer-mailgun-transport": "^1.2.4"
   },
   "devDependencies": {},
   "scripts": {

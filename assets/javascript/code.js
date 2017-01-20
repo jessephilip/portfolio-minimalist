@@ -208,8 +208,32 @@ $(".portfolioPics").on("click", (e) => {
 
 });
 
-function sendMessage() {
+// clicklistener to send mailer
+$("#sendButton").on("click", () => {
+
+	// get user input values
 	let name = $("#nameInput").val().trim();
 	let email= $("#emailInput").val().trim();
-	let message = $("message").val().trim();
-}
+	let message = $("#messageInput").val().trim();
+
+	// ajax call to send user's input and send mail
+	$.ajax({
+		url: '/mail',
+		type: 'POST',
+		data: {name: name, email: email, message: message}
+	})
+	.done(function(data) {
+
+		// send comfirmation alert
+		vex.dialog.alert("Thank you for sending me a message! I'll get back to you soon.");
+
+		// clear user inputs
+		$("#nameInput").val("");
+		$("#emailInput").val("");
+		$("#messageInput").val("");
+
+	})
+	.fail(function() {
+		vex.dialog.alert("Oops. Something went wrong. Please try again.");
+	});
+});
