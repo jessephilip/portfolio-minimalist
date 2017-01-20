@@ -7,8 +7,8 @@ const keys = require ("./keys.js")
 // This is your API key that you retrieve from www.mailgun.com/cp (free up to 10K monthly emails)
 var auth = {
     auth: {
-        api_key: keys.mailgun.key,
-        domain: keys.mailgun.domain
+        api_key: keys.mailgun.key || process.env.api_key,
+        domain: keys.mailgun.domain || process.env.domain
     }
 }
 
