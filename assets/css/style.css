@@ -545,3 +545,36 @@ img.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
 #modalHeroku i {
 	color: white;
 }
+
+.modal-content  {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+
+.btn {
+	border-radius: 0px;
+}
+
+.form-control, .input-group, .input-group-lg, .input-group-addon {
+	-webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.col-md-5 {
+	padding: 0px;
+}
+
+#textarea, #nameRow {
+	margin-top: 24px;
+}
+
+#sendButton {
+	margin-top: 12px;
+	color: grey;
+}
+
+#sendButton:hover {
+	color: black;
+}

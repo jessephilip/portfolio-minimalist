@@ -204,7 +204,7 @@
 
 	</section>
 
-	<section id="contactSection" class="hide">
+	<section id="contactSection">
 		<nav id="contactNav" class="navbar navbar-inverse parent-col">
 			<ul class="nav navbar-nav navbar-left">
 				<li>
@@ -242,21 +242,27 @@
 
 		<h1 class="text-center">Contact Me</h1>
 		<div id="inputs">
-			<form action="https://formspree.io/jessephilip@gmail.com" method="POST">
-			<div class="input-group input-group-lg">
-				<span class="input-group-addon" id="nameInput"><i class="glyphicon glyphicon-user"></i></span>
-				<input type="text" name="name" class="form-control" placeholder="Your Name" aria-describedby="nameInput">
+			<div id="nameRow" class="row">
+				<div class="col-md-5">
+					<label id="name" for="name">Name:</label>
+					<input type="text" name="name" class="form-control" placeholder="Your Name" aria-describedby="nameInput">
+				</div>
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-5">
+					<label for="email">Email:</label>
+					<input id="email" type="email" name="_replyto" class="form-control" placeholder="Your Email" aria-describedby="emailInput">
+				</div>
 			</div>
-			<div class="input-group input-group-lg">
-				<span class="input-group-addon" id="emailInput"><i class="glyphicon glyphicon-envelope"></i></span>
-				<input type="email" name="_replyto"class="form-control" placeholder="Your Email" aria-describedby="emailInput">
+			<div id="textarea" class="row">
+				<div class="form-group">
+					<label for="message">Message:</label>
+					<textarea class="form-control" name="message" rows="5" id="message"></textarea>
+				</div>
 			</div>
-			<div class="form-group">
-				<label for="message">Message:</label>
-				<textarea class="form-control" name="message" rows="5" id="message"></textarea>
+			<div class="row">
+				<button id="sendButton" class="btn btn-lg">Send <i class="fa fa-send"></i></button>
 			</div>
-			<input type="submit" value="Send" class="btn btn-lg"></input>
-		</form>
 		</div>
 	</section>
 
@@ -265,36 +271,36 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h1 class="modal-title text-center" id="modalTitle">New message</h1>
-				</div>
-				<div class="modal-body">
-					<img id="modalImg" class="img-responsive" src="" alt="" />
+				<h1 class="modal-title text-center" id="modalTitle">New message</h1>
+			</div>
+			<div class="modal-body">
+				<img id="modalImg" class="img-responsive" src="" alt="" />
 
-					<ul id="modalList">
+				<ul id="modalList">
 
-					</ul>
-					<p id="modalDesc">
+				</ul>
+				<p id="modalDesc">
 
-					</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<a id="modalGithub" type="button" class="btn color-github" href="#" target="_blank">Github <i class="devicons devicons-github_badge"></i></a>
-					<a id="modalHeroku" type="button" class="btn color-heroku" href="#" target="_blank">Heroku <i class="devicons devicons-heroku"></i></a>
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<a id="modalGithub" type="button" class="btn color-github" href="#" target="_blank">Github <i class="devicons devicons-github_badge"></i></a>
+				<a id="modalHeroku" type="button" class="btn color-heroku" href="#" target="_blank">Heroku <i class="devicons devicons-heroku"></i></a>
 
-				</div>
 			</div>
 		</div>
-	</div>
+		</div>
+		</div>
 
-	<!-- jQuery -->
-	<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<!-- Bootstrap JavaScript -->
-	<script type="text/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- object containing project descriptions -->
-	<script type="text/javascript" charset="utf-8" src="javascript/projects.js"></script>
-	<!-- custom js -->
-	<script type="text/javascript" charset="utf-8" src="javascript/code.js"></script>
+		<!-- jQuery -->
+		<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script type="text/javascript" charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- object containing project descriptions -->
+		<script type="text/javascript" charset="utf-8" src="javascript/projects.js"></script>
+		<!-- custom js -->
+		<script type="text/javascript" charset="utf-8" src="javascript/code.js"></script>
 </body>
 
 </html>
