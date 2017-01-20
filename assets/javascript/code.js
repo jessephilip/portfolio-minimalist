@@ -106,12 +106,12 @@ function loadContact() {
 // this function replaces the black and white profile picture with the full color one
 function colorifyPicture() {
     console.log("colorify");
-    $(".brand-image").attr("src", "assets/images/main-profile.jpg");
+    $(".brand-image").attr("src", "images/main-profile.jpg");
 }
 
 function blackAndWhiteify() {
     console.log("blackandwhiteify");
-    $(".brand-image").attr("src", "assets/images/main-profile-bw.jpg");
+    $(".brand-image").attr("src", "images/main-profile-bw.jpg");
 }
 
 var portfolioArray = document.getElementsByClassName("portfolioPic")
@@ -140,7 +140,7 @@ function pictureSwitch() {
     let imgSrc;
 
     // variable for the preface of the image source tag
-    let loc = "assets/images/";
+    let loc = "images/";
 
     // variable pointing to the img element in the div
     let imgTag = $(this).children("img");
@@ -208,8 +208,32 @@ $(".portfolioPics").on("click", (e) => {
 
 });
 
-function sendMessage() {
+// clicklistener to send mailer
+$("#sendButton").on("click", () => {
+
+	// get user input values
 	let name = $("#nameInput").val().trim();
 	let email= $("#emailInput").val().trim();
-	let message = $("message").val().trim();
-}
+	let message = $("#messageInput").val().trim();
+
+	// ajax call to send user's input and send mail
+	$.ajax({
+		url: '/mail',
+		type: 'POST',
+		data: {name: name, email: email, message: message}
+	})
+	.done(function(data) {
+
+		// send comfirmation alert
+		vex.dialog.alert("Thank you for sending me a message! I'll get back to you soon.");
+
+		// clear user inputs
+		$("#nameInput").val("");
+		$("#emailInput").val("");
+		$("#messageInput").val("");
+
+	})
+	.fail(function() {
+		vex.dialog.alert("Oops. Something went wrong. Please try again.");
+	});
+});

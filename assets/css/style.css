@@ -4,9 +4,17 @@ html {
 
 body {
     background: black;
-    font-family: 'Trirong', serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+h1,h2,h3 {
+	font-family: "Open Sans", sans-serif;
+}
+
+#intro a {
+	font-family: "Open Sans", sans-serif;
 }
 
 #title-text {
@@ -60,6 +68,15 @@ a:visited, a:link, a:active {
     width: 70%;
 }
 
+.dropdown-menu {
+	background: white;
+	border: 0px;
+	box-shadow: unset;
+	border-radius: 0px;
+	min-width: 100% !important;
+
+}
+
 .flex {
     position: absolute;
     display: flex;
@@ -100,11 +117,6 @@ a:visited, a:link, a:active {
 
 .socialDiv .fa {
     margin: 0 5px;
-}
-
-#skillsImage {
-    width: 100%;
-    margin: 5%;
 }
 
 .big {
@@ -226,6 +238,22 @@ a:visited, a:link, a:active {
         transform: scale(1.1);
     }
 }
+/* img grow */
+img.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+img.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(2.2);
+  transform: scale(2.2);
+}
 
 /* Grow */
 .hvr-grow {
@@ -300,7 +328,7 @@ a:visited, a:link, a:active {
 }
 
 #inputs {
-	width: 70%;
+	width: 50%;
 	margin: 0 auto;
 }
 
@@ -511,4 +539,37 @@ a:visited, a:link, a:active {
 
 #modalHeroku i {
 	color: white;
+}
+
+.modal-content  {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+
+.btn {
+	border-radius: 0px;
+}
+
+.form-control, .input-group, .input-group-lg, .input-group-addon {
+	-webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.col-md-5 {
+	padding: 0px;
+}
+
+#textarea, #nameRow {
+	margin-top: 24px;
+}
+
+#sendButton {
+	margin-top: 12px;
+	color: grey;
+}
+
+#sendButton:hover {
+	color: black;
 }

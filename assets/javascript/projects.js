@@ -1,10 +1,10 @@
 const portfolio = {
 	"hangman": {
 		"name": "Hangman",
-		"photo": 'assets/images/hangman_edited.jpg',
-		"photo_bw": 'assets/images/hangman_edited_bw.jpg',
-		"photo_small": 'assets/images/hangman_edited_small.jpg',
-		"photo_small_bw": 'assets/images/hangman_edited_bw_small.jpg',
+		"photo": 'images/hangman_edited.jpg',
+		"photo_bw": 'images/hangman_edited_bw.jpg',
+		"photo_small": 'images/hangman_edited_small.jpg',
+		"photo_small_bw": 'images/hangman_edited_bw_small.jpg',
 		"heroku": "https://pure-mountain-27349.herokuapp.com/",
 		"github": "https://github.com/jessephilip/hangman",
 		"tech": ["HTML", "CSS", "Javascript", "Bootstrap", "Google Fonts", "Font Awesome", "Microsoft Paint"],
@@ -13,10 +13,10 @@ const portfolio = {
 
 	"fetch": {
 		"name": "Fetch",
-		"photo": "assets/images/fetch_edited.jpg",
-		"photo_bw": 'assets/images/fetch_edited_bw.jpg',
-		"photo_small": 'assets/images/fetch_edited_small.jpg',
-		"photo_small_bw": 'assets/images/fetch_edited_bw_small.jpg',
+		"photo": "images/fetch_edited.jpg",
+		"photo_bw": 'images/fetch_edited_bw.jpg',
+		"photo_small": 'images/fetch_edited_small.jpg',
+		"photo_small_bw": 'images/fetch_edited_bw_small.jpg',
 		"heroku": "https://agile-mountain-24076.herokuapp.com/",
 		"github": "https://github.com/jessephilip/Pet-Tinder",
 		"tech": ["HTML", "CSS", "Javascript", "jQuery", "MaterializeCSS", "Google Fonts", "Font Awesome", "Alertify.js", "Google Sign-In", "Node.js", "NPM", "MySQL", "RegEx", "Validator"],
@@ -26,10 +26,10 @@ const portfolio = {
 
 	"mtg": {
 		"name": "MTG the Console",
-		"photo": "assets/images/mtg_console_edited.jpg",
-		"photo_bw": 'assets/images/mtg_console_edited_bw.jpg',
-		"photo_small": 'assets/images/mtg_console_edited_small.jpg',
-		"photo_small_bw": 'assets/images/mtg_console_edited_bw_small.jpg',
+		"photo": "images/mtg_console_edited.jpg",
+		"photo_bw": 'images/mtg_console_edited_bw.jpg',
+		"photo_small": 'images/mtg_console_edited_small.jpg',
+		"photo_small_bw": 'images/mtg_console_edited_bw_small.jpg',
 		"heroku": "https://tranquil-cliffs-20102.herokuapp.com/",
 		"github": "https://github.com/jessephilip/mtg-firebase",
 		"tech": ["HTML", "CSS", "Javascript", "jQuery", "MaterializeCSS", "Firebase", "Google Sign-In", "Node.js", "NPM"],
@@ -39,10 +39,10 @@ const portfolio = {
 
 	"ranger": {
 		"name": "Ranger",
-		"photo": "assets/images/ranger_edited.jpg",
-		"photo_bw": 'assets/images/ranger_edited_bw.jpg',
-		"photo_small": 'assets/images/ranger_edited_small.jpg',
-		"photo_small_bw": 'assets/images/ranger_edited_bw_small.jpg',
+		"photo": "images/ranger_edited.jpg",
+		"photo_bw": 'images/ranger_edited_bw.jpg',
+		"photo_small": 'images/ranger_edited_small.jpg',
+		"photo_small_bw": 'images/ranger_edited_bw_small.jpg',
 		"heroku": "https://warm-sands-13736.herokuapp.com/",
 		"github": "https://github.com/jessephilip/Hiking-App",
 		"tech": ["HTML", "CSS", "Javascript", "jQuery", "MaterializeCSS", "Google Fonts", "Alertify.js", "Firebase", "Google Places API", "Open Trails API", "Weather Underground API"],
@@ -51,10 +51,10 @@ const portfolio = {
 
 	"wedding": {
 		"name": "Happily Ever Matherne",
-		"photo": "assets/images/wedding_edited.jpg",
-		"photo_bw": 'assets/images/wedding_edited_bw.jpg',
-		"photo_small": 'assets/images/wedding_edited_small.jpg',
-		"photo_small_bw": 'assets/images/wedding_edited_bw_small.jpg',
+		"photo": "images/wedding_edited.jpg",
+		"photo_bw": 'images/wedding_edited_bw.jpg',
+		"photo_small": 'images/wedding_edited_small.jpg',
+		"photo_small_bw": 'images/wedding_edited_bw_small.jpg',
 		"heroku": "https://blooming-refuge-83262.herokuapp.com/",
 		"github": "https://github.com/jessephilip/wedding-website",
 		"tech": ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Google Fonts", "Font Awesome", "Hover.CSS", "jCarousel"],
@@ -64,10 +64,10 @@ const portfolio = {
 
 	"giphy": {
 		"name": "Giphy in a Jiffy",
-		"photo": "assets/images/giphy_edited.jpg",
-		"photo_bw": 'assets/images/giphy_edited_bw.jpg',
-		"photo_small": 'assets/images/giphy_edited_small.jpg',
-		"photo_small_bw": 'assets/images/giphy_edited_bw_small.jpg',
+		"photo": "images/giphy_edited.jpg",
+		"photo_bw": 'images/giphy_edited_bw.jpg',
+		"photo_small": 'images/giphy_edited_small.jpg',
+		"photo_small_bw": 'images/giphy_edited_bw_small.jpg',
 		"heroku": "https://shielded-earth-15957.herokuapp.com/",
 		"github": "https://github.com/jessephilip/giphy",
 		"tech": ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Google Fonts"],
